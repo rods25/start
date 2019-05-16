@@ -14,3 +14,4 @@ npm-debug.log*
 /svn
 /svn-qa
 /.oh-my-zsh
+/templatecache-local
