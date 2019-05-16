@@ -1,0 +1,37 @@
+############################################################
+## Edit this file
+############################################################
+alias aliases="e $DOTFILES_ALIASES_PATH/.aliases"
+
+# Easier navigation: .., ..., ...., ....., ~ and -
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~"
+alias -- -="cd -"
+alias ll="ls -1 -all"
+alias ll2="ls -lah"
+
+############################################
+## Paths
+############################################
+alias h="history"
+alias dotfiles="cd $DOTFILES_PATH"
+alias .dotfiles="code -a $DOTFILES_PATH"
+
+## UOL
+#alias pu="cd $LLARAUJO/playground/uol"
+#alias pug="cd $LLARAUJO/playground/uol/git"
+#alias .svn="cd $LLARAUJO/playground/uol/svn"
+
+
+############################################################
+## Utils
+############################################################
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias g="git"
+alias e="code -a"
+
+alias hosts="e /etc/hosts"

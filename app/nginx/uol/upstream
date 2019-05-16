@@ -1,0 +1,88 @@
+upstream apiConteudo {
+    server 16.16.16.16;
+}
+
+upstream development {
+    server 127.0.0.1:58080;
+}
+
+upstream developmentSSL {
+    server 127.0.0.1:58081;
+}
+
+upstream developmentQA {
+    server 127.0.0.1:59999;
+}
+upstream nodeland {
+    server 127.0.0.1:60000;
+}
+upstream nodelandSSL {
+    server 127.0.0.1:60001;
+}
+
+upstream BOLProduction {
+    server 200.147.68.9;
+}
+
+upstream HTMLproduction {
+    server 200.147.68.19:443;
+    server 200.221.64.47:443;
+}
+
+upstream poolTransicao {
+    server 200.221.64.45;
+    server 200.147.68.10;
+}
+
+upstream IMGproduction {
+  server 200.147.68.18;
+}
+
+upstream JSUOLCOMproduction {
+    server 200.147.67.184;
+    server 200.221.2.70;
+}
+
+upstream JSUOLCOMBRproduction {
+    server 200.147.67.192:443;
+    #server 200.221.2.85;
+}
+
+upstream PLACARproduction {
+    server 200.147.68.11;
+}
+
+upstream PLACARUOLproduction {
+    server 200.147.68.11;
+}
+
+upstream PublicadorProduction {
+    server 10.131.160.99;
+    server 10.129.160.87;
+}
+
+upstream PublicadorUolincProduction {
+    server 200.147.2.216;
+}
+
+upstream PublicadorProductionLogin {
+    server 10.131.160.99:443;
+    server 10.129.160.87:443;
+}
+
+upstream PublicadorQA {
+    server 10.138.144.27;
+}
+
+upstream PublicadorQALogin {
+    server 10.133.132.61:443;
+}
+
+upstream STCproduction {
+    server 200.221.7.100;
+}
+
+upstream wwwUOLPreview {
+    server 10.129.160.59;
+}
+

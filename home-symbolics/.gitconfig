@@ -1,0 +1,135 @@
+[alias]
+
+	amend = commit --amend --all
+    br = branch
+    brd = branch -D
+    cb = checkout -b
+	ci = commit
+    co = checkout
+    coo = checkout --orphan
+	cp = cherry-pick
+	df = diff --color --color-words --abbrev
+    f = fetch
+    m = merge
+	pl = pull
+    plr = pull --rebase
+    plro = pull --rebase origin
+    pod = push origin :
+    ps = push
+	psf = push --force
+	st = status
+	sclone = clone --depth=1
+	undocommit = reset HEAD
+	rh = reset --hard
+
+    #ll = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+
+    # Submodules command
+    sub = submodule
+    spl = submodule foreach 'git pl'
+    sco = submodule foreach 'git co'
+    srh = submodule foreach 'git rh'
+
+	# Show the diff between the latest commit and the current state
+#	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+
+	reup = rebase-update # depot_tools specific
+	#git = !exec git
+
+[core]
+	#excludesfile = ~/.gitignore
+	#attributesfile = ~/.gitattributes
+	#editor = vscode
+#	pager = diff-so-fancy | less --tabs=4 -RFX
+
+[pager]
+	#diff = diff-so-fancy | less --tabs=4 -RFX
+	# insanely beautiful diffs ==> npm install -g diff-so-fancy
+	#show = diff-so-fancy | less --tabs=4 -RFX
+
+
+[interactive]
+  # disabled until github.com/so-fancy/diff-so-fancy/pull/172 is resolved :(
+	#diffFilter = "diff-so-fancy"
+
+# so much color
+#[color]
+#	ui = auto
+#[color "diff"]
+#	meta = yellow bold
+#	commit = green bold
+#	frag = magenta bold
+#	old = red bold
+#	new = green bold
+#	whitespace = red reverse
+#    newMoved = cyan
+#    oldMoved = blue
+#[color "diff-highlight"]
+#	oldNormal = red bold
+#	oldHighlight = "red bold 52"
+#	newNormal = "green bold"
+#	newHighlight = "green bold 22"
+#[color "branch"]
+#	current = yellow reverse
+#	local = yellow
+#	remote = green
+#[color "status"]
+#	added = yellow
+#	changed = green
+#	untracked = cyan
+
+# git mergetool
+[merge]
+	#tool = diffuse
+	renameLimit = 0
+
+# correct typos
+[help]
+	autocorrect = 1
+
+# push easily. http://stackoverflow.com/a/23918418/89484
+[push]
+	default = current
+	followTags = true
+
+# use separate file for username / github token / etc
+[include]
+  path = ~/.gitconfig.local
+
+#[init]
+#	templatedir = ~/.git_template
+
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+
+[fetch]
+	prune = true
+[diff]
+	#compactionHeuristic = true
+  #tool = diffuse
+    # Show blocks of moved text of at least 20 alphanumeric characters differently than adds/deletes
+    # https://blog.github.com/2018-04-05-git-217-released/
+  #colorMoved = zebra
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[stash]
+	showPatch = true
+[log]
+	date = relative
+[url "https://github.com/"]
+	insteadOf = git@github.com:
+[url "https://"]
+	insteadOf = git://
+[branch "master"]
+	rebase = true
+[branch "develop"]
+	rebase = true
+[http]
+	sslVerify = false
+[difftool]
+	vscode = code --wait --diff $LOCAL $REMOTE
+[user]
+	name = Rodrigo Ribeiro Ferreira dos Santos
+	email = rrfsantos@uolinc.com

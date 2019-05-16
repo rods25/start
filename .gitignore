@@ -1,0 +1,16 @@
+.project
+.settings
+*~
+*.diff
+*.patch
+.DS_Store
+.bower.json
+.sizecache.json
+yarn.lock
+package-lock.json
+npm-debug.log*
+/node_modules
+/git
+/svn
+/svn-qa
+/.oh-my-zsh

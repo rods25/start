@@ -1,0 +1,23 @@
+export OSTYPE="linux-gnu"
+export DOTFILES_OS='ubuntu'
+
+export DOTFILES_PATH="$HOME/start/"
+export DOTFILES_ALIASES_PATH="$DOTFILES_PATH/aliases"
+export DOTFILES_EXPORTS_PATH="$DOTFILES_PATH/exports"
+
+DOTFILES_INCLUDES=(
+    "$DOTFILES_EXPORTS_PATH/.exports"
+    "$DOTFILES_ALIASES_PATH/.aliases"
+    "$DOTFILES_ALIASES_PATH/.aliases-work"
+)
+
+for file in "${DOTFILES_INCLUDES[@]}"
+do
+    if [[ -f $file ]]; then
+        source $file
+    fi
+done
+
+if [[ -f "nginx.sh" ]]; then
+    bash nginx.sh
+fi
