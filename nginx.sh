@@ -20,8 +20,3 @@ if [[ -f "$NGINX_DIR/nginx.conf" ]]; then
   ln -s "$DOTFILES_PATH/app/nginx/nginx.conf" "$NGINX_DIR/nginx.conf"
   ln -s "$DOTFILES_PATH/app/nginx/uol" "$NGINX_DIR/uol"
 fi
-
-
-if [[ -f "uol.sh" ]]; then
-    source uol.sh
-fi

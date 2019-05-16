@@ -40,13 +40,13 @@ Execute sudo npm install -g em /git/git-deploy, em /robocopier/ e em /tclink/
 
   No caso de home uol editorial, ir para /git/www.uol.com.br/ e executar  tclink  no terminator. Isso cria um link simbólico de /git/www.uol.com.br-camaleao-editorial/ dentro de /camaleao/.
   
-  Quando for rodar a Template Cache Local http e https da homeuol, execute ./run.sh 58080 58081
+  Quando for rodar a Template Cache Local http e https da homeuol, execute tcl
 
   #### Para nginx ####
   Os dominios e servers usados estão dentro de /app/nginx/.
   Em .main, após executarmos start.sh, são setados os paths do nginx. 
   
-  Quando for rodar o nginx, verifique os hosts setados em /etc/hosts.conf, execute sudo service nginx start/status/restart/stop para avaliar o estado do nginx em qualquer path.  
+  Quando for rodar o nginx, verifique os hosts setados em /etc/hosts.conf, existem alias para avaliar o estado do nginx em qualquer path.  
   
 No projeto da Home UOL pode acontecer de dar erro ao executar npm install ou start em /camaleao/src/, executar git config --global http.sslverify "false". O repositório pode estar com conflitos de https e este comando libera para download. Executar somente se houver erro.
 
