@@ -28,3 +28,12 @@ alias dply="git-deploy"
 ############################################################
 alias .svn-qa="cd $SVNQAPATH"
 alias .svn-qa="cd $SVNQAPATH"
+
+############################################################
+##  NGINX
+############################################################
+alias nginx="service nginx"
+alias ngstr="nginx start"
+alias ngrstr="nginx restart"
+alias ngsts="nginx status"
+alias ngstp="nginx stop"
