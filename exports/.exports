@@ -13,7 +13,7 @@ export SVNPATH="$HOME/start/svn"
 export SVNQAPATH="$HOME/start/svn-qa"
 export TCLPATH="$HOME/start/templatecache-local"
 export GITPATH="$HOME/start/git"
-export START="$HOME/start/"
+export START="$HOME/start"
 export PG_PATH="$HOME/start/git/projeto-grafico-v2/"
 
 export PATH="/usr/local/bin/node:/usr/local/bin/npm:$HOME/node/bin:$PATH"

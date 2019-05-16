@@ -1,7 +1,7 @@
 export OSTYPE="linux-gnu"
 export DOTFILES_OS='ubuntu'
 
-export DOTFILES_PATH="$HOME/start/"
+export DOTFILES_PATH="$HOME/start"
 export DOTFILES_ALIASES_PATH="$DOTFILES_PATH/aliases"
 export DOTFILES_EXPORTS_PATH="$DOTFILES_PATH/exports"
 
@@ -19,5 +19,5 @@ do
 done
 
 if [[ -f "nginx.sh" ]]; then
-    bash nginx.sh
+    source nginx.sh
 fi

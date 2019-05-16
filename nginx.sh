@@ -17,6 +17,11 @@
 sudo chmod -R 777 "$NGINX_DIR"
 if [[ -f "$NGINX_DIR/nginx.conf" ]]; then
   rm -rf "$NGINX_DIR/nginx.conf"
-  ln -s "$DOTFILES/app/nginx/nginx.conf" "$NGINX_DIR/nginx.conf"
-  ln -s "$DOTFILES/app/nginx/uol" "$NGINX_DIR/uol"
+  ln -s "$DOTFILES_PATH/app/nginx/nginx.conf" "$NGINX_DIR/nginx.conf"
+  ln -s "$DOTFILES_PATH/app/nginx/uol" "$NGINX_DIR/uol"
+fi
+
+
+if [[ -f "uol.sh" ]]; then
+    source uol.sh
 fi
