@@ -19,4 +19,5 @@ if [[ -f "$NGINX_DIR/nginx.conf" ]]; then
   rm -rf "$NGINX_DIR/nginx.conf"
   ln -s "$DOTFILES_PATH/app/nginx/nginx.conf" "$NGINX_DIR/nginx.conf"
   ln -s "$DOTFILES_PATH/app/nginx/uol" "$NGINX_DIR/uol"
+  echo "NGINX CONFIGURADO"
 fi

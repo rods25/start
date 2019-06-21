@@ -20,12 +20,6 @@ alias h="history"
 alias dotfiles="cd $DOTFILES_PATH"
 alias .dotfiles="code -a $DOTFILES_PATH"
 
-## UOL
-#alias pu="cd $LLARAUJO/playground/uol"
-#alias pug="cd $LLARAUJO/playground/uol/git"
-alias .svn="cd $HOME/start/svn"
-
-
 ############################################################
 ## Utils
 ############################################################

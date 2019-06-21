@@ -21,12 +21,13 @@ alias tclogs="cd /export/logs/templatecache;"
 ############################################################
 ##  GIT DEPLOY
 ############################################################
-alias dply="git-deploy"
+alias gdpl="git-deploy"
+alias gdd="gdpl deploy"
 
 ############################################################
 ##  GIT DEPLOY
 ############################################################
-alias .svn-qa="cd $SVNQAPATH"
+alias .svn="cd $SVNPATH"
 alias .svn-qa="cd $SVNQAPATH"
 
 ############################################################
@@ -34,6 +35,6 @@ alias .svn-qa="cd $SVNQAPATH"
 ############################################################
 alias nginx="service nginx"
 alias ngstr="nginx start"
-alias ngrstr="nginx restart"
+alias ngrst="nginx restart"
 alias ngsts="nginx status"
 alias ngstp="nginx stop"
