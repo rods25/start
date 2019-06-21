@@ -94,8 +94,15 @@ function bgnotify_formatted {
   bgnotify "$title -- after $3 s" "$2";
 }
 
-plugins=(git bgnotify zsh-syntax-highlighting zsh-autosuggestions)  ## add to plugins list
-source $ZSH/oh-my-zsh.sh  ## existing source call
+cd ~/.oh-my-zsh/custom/plugins
+
+sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+
+sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+plugins=(git bgnotify zsh-syntax-highlighting zsh-autosuggestions)
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -130,3 +137,5 @@ source "$HOME/Documents/start/.main"
 #test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source /home/rodrigo/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/rodrigo/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
