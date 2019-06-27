@@ -20,7 +20,7 @@ do
     else
         ## Clonando plugins
         cd "$ZSH/custom/plugins"
-        sudo git clone "https://github.com/${PLUGINSREPODIR[$PLUGINSREPOKEY]}" "${PLUGINSDIR[$PLUGINSREPOKEY]}"
+        git clone "https://github.com/${PLUGINSREPODIR[$PLUGINSREPOKEY]}" "${PLUGINSDIR[$PLUGINSREPOKEY]}"
         echo "Finalizando download de ${PLUGINSDIR[$PLUGINSREPOKEY]}"
     fi
 done

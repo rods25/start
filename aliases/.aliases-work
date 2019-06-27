@@ -33,8 +33,8 @@ alias .svn-qa="cd $SVNQAPATH"
 ############################################################
 ##  NGINX
 ############################################################
-alias nginx="sudo service nginx"
-alias ngstr="sudo nginx start"
-alias ngrst="sudo nginx restart"
-alias ngsts="sudo nginx status"
-alias ngstp="sudo nginx stop"
+alias nginx="service nginx"
+alias ngstr="nginx start"
+alias ngrst="nginx restart"
+alias ngsts="nginx status"
+alias ngstp="nginx stop"

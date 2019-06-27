@@ -53,7 +53,8 @@ echo "xclip ssh to stash, favor colar no seu ambiente"
 #
 # Após configurar o SSH Key no stash, clone o projeto START para $HOME/Documents/
 cd $HOME/Documents/
-git clone ssh://git@stash.uol.intranet:7999/~rrfsantos/start.git
+git clone ssh://git@stash.uol.intranet:7999/~rrfsantos/start.git start
+sudo chmod -R 777 start/
 
 ```
 ### Instalações do sistema ###
@@ -67,7 +68,7 @@ O arquivo "start" possui configurações que auxiliam no desenvolvimento.
 ### Para ambiente UOL ###
 Execute "bash uol.sh" no terminal.
 Clona projetos usados na equipe da Home UOL. (www.uol.com.br, editorial, jsuol, TC, tclink)
-*Execute sudo npm install -g em /git/git-deploy, em /robocopier/ e em /tclink/*
+*Execute npm install -g em /git/git-deploy, em /robocopier/ e em /tclink/*
 
 #### Para LSHome, TC e nginx ####
 Para criar o link simbólico de "www.uol.com.br-editorial", basta ir para "git/www.uol.com.br/" e executar  "tclink"  no terminal.
