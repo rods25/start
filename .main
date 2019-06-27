@@ -14,7 +14,8 @@ DOTFILES_INCLUDES=(
 for file in "${DOTFILES_INCLUDES[@]}"
 do
     if [[ -f $file ]]; then
-        echo "$file"
         source $file
+    else
+        echo "Não encontrou $file"
     fi
 done

@@ -86,22 +86,28 @@ ZSH_THEME="kolo"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-bgnotify_threshold=4  ## set your own notification threshold
 
+# Download external plugins ZSH
+bash $START/zshPlugins.sh
+
+# Config bgnotify
+bgnotify_threshold=4  ## set your own notification threshold
 function bgnotify_formatted {
   ## $1=exit_status, $2=command, $3=elapsed_time
-  [ $1 -eq 0 ] && title="Holy Smokes Batman!" || title="Holy Graf Zeppelin!"
+  [ $1 -eq 0 ] && title="Santa barba de Gandalf!" || title="$USER, você nunca será um Hokage!"
   bgnotify "$title -- after $3 s" "$2";
 }
 
-cd ~/.oh-my-zsh/custom/plugins
-
-sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
-
-sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
-plugins=(git bgnotify zsh-syntax-highlighting zsh-autosuggestions)
+# Lista de plugins
+plugins=(
+    git
+    bgnotify
+    z
+    dnf
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+    zsh-nvm
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -133,9 +139,3 @@ source $ZSH/oh-my-zsh.sh
 
 # -- .dotfiles ----------------------------------------------------------------------
 source "$HOME/Documents/start/.main"
-
-#test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-source /home/rodrigo/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /home/rodrigo/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

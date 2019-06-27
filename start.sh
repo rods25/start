@@ -17,3 +17,15 @@ do
         ln -s "$PWD/home-symbolics/$file" "$HOME/$file"
     fi
 done
+
+if [[ -f zshPlugins.sh ]]; then
+    zsh
+else
+    echo "Não encontrou zshPlugins"
+fi
+
+if [[ -f nginx.sh ]]; then
+    bash nginx.sh
+else
+    echo "Não encontrou nginx"
+fi

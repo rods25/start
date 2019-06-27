@@ -1,10 +1,14 @@
+## TODO Config domains nginx
 ## Projeto Start (Cinnamon) com as configs necessárias para o ambiente UOL.
 
 Copie e cole o código abaixo em um editor e faça as alterações necessárias. Depois execute no terminal.
 
 ### Instalando packs para dev
 ```sh
-echo ("Iniciando instalação dos pacotes")
+#
+#!/usr/bin/env bash
+
+echo "Iniciando instalação dos pacotes"
 PACKS=( 
     "git"
     "subversion" 
@@ -41,11 +45,6 @@ sudo sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/to
 sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 
 #
-# Config git user
-$ git config --global user.name "Rodrigo Santos"
-$ git config --global user.email "rrfsantos@uolinc.com"
-
-#
 # Gerando Key SSH para o stash uol
 ssh-keygen -t rsa -C "rrfsantos@uolinc.com"
 xclip -selection clipboard < ~/.ssh/id_rsa.pub
@@ -57,15 +56,18 @@ cd $HOME/Documents/
 git clone ssh://git@stash.uol.intranet:7999/~rrfsantos/start.git
 
 ```
+### Instalações do sistema ###
+Acessar o path onde ficará os seus projetos, execute "cat > initDownloads.sh", cole o código acima e saia do processo com ctrl + C.
+Executar "bash initDownloads.sh" e acompanhar os processos. Após finalizar, continue seguindo os passos abaixo. 
 
 ### Para ambiente de dev ###
 Executar "bash start.sh" no terminal.
-O arquivo "start" configura e instala programas necessários para o desenvolvimento. 
+O arquivo "start" possui configurações que auxiliam no desenvolvimento. 
 
 ### Para ambiente UOL ###
 Execute "bash uol.sh" no terminal.
 Clona projetos usados na equipe da Home UOL. (www.uol.com.br, editorial, jsuol, TC, tclink)
-Execute sudo npm install -g em /git/git-deploy, em /robocopier/ e em /tclink/
+*Execute sudo npm install -g em /git/git-deploy, em /robocopier/ e em /tclink/*
 
 #### Para LSHome, TC e nginx ####
 Para criar o link simbólico de "www.uol.com.br-editorial", basta ir para "git/www.uol.com.br/" e executar  "tclink"  no terminal.
