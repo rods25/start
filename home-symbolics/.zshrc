@@ -88,7 +88,7 @@ ZSH_THEME="kolo"
 # Add wisely, as too many plugins slow down shell startup.
 
 # Download external plugins ZSH
-bash $START/zshPlugins.sh
+bash $HOME/Documents/start/zshPlugins.sh
 
 # Config bgnotify
 bgnotify_threshold=4  ## set your own notification threshold
