@@ -21,7 +21,7 @@ PACKS=(
 )
 for APPS in "${PACKS[@]}"
 do
-    sudo apt-get install $APPS
+    apt-get install $APPS
 done
 
 #
@@ -35,20 +35,20 @@ SNAPPACKS=(
 )
 for SNAPS in "${SNAPPACKS[@]}"
 do
-    sudo snap install $SNAPS
+    snap install $SNAPS
 done
 
 #
 # Instalando ZSH e NVM
 
-sudo sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 
 #
 # Gerando Key SSH para o stash uol
-ssh-keygen -t rsa -C "rrfsantos@uolinc.com"
-xclip -selection clipboard < ~/.ssh/id_rsa.pub
-echo "xclip ssh to stash, favor colar no seu ambiente"
+#ssh-keygen -t rsa -C "rrfsantos@uolinc.com"
+#xclip -selection clipboard < ~/.ssh/id_rsa.pub
+#echo "xclip ssh to stash, favor colar no seu ambiente"
 
 #
 # Após configurar o SSH Key no stash, clone o projeto START para $HOME/Documents/
