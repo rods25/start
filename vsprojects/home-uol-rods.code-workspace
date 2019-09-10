@@ -23,6 +23,10 @@
 		{
 			"name": "[SERVICES] Nginx",
 			"path": "/home/rrfsantos/Documents/start/app/nginx"
+		},
+		{
+			"name": "[START]",
+			"path": "/home/rrfsantos/Documents/start/"
 		}
 	],
 	"settings": {}
