@@ -1,32 +1,28 @@
 {
 	"folders": [
 		{
-			"name": "[GIT] Home UOL",
 			"path": "/home/rrfsantos/Documents/start/git/www.uol.com.br"
 		},
 		{
-			"name": "[GIT] Home UOL: Dados Editoriais",
 			"path": "/home/rrfsantos/Documents/start/git/www.uol.com.br-camaleao-editorial"
 		},
 		{
-			"name": "[MT] Home UOL: Metatemplates",
 			"path": "/home/rrfsantos/Documents/start/svn/metatemplate/br/com/uol/www/"
 		},
 		{
-			"name": "[IN] Home UOL: Includes",
 			"path": "/home/rrfsantos/Documents/start/svn/include/homeuol/"
 		},
 		{
-			"name": "[WC] www.uol.com.br",
 			"path": "/home/rrfsantos/Documents/start/svn/webcontent/br/com/uol/home2015"
 		},
 		{
-			"name": "[SERVICES] Nginx",
 			"path": "/home/rrfsantos/Documents/start/app/nginx"
 		},
 		{
-			"name": "[START]",
 			"path": "/home/rrfsantos/Documents/start/"
+		},
+		{
+			"path": "/home/rrfsantos/Documents/start/git/commons.uol.com.br-monaco"
 		}
 	],
 	"settings": {}
