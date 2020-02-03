@@ -15,15 +15,14 @@ alias .svn-clean="svn status | grep '^?' | awk '{print $2}' | xargs rm -rf"
 ##  TCL
 ############################################################
 alias tcl="cd $TCLPATH && sh run.sh 58080 58081"
-##alias tcl="cd $TCLPATH && sudo sh run.sh"
 alias tpls="cd $TCLPATH/templates;"
 alias tclogs="cd /export/logs/templatecache;"
 
 ############################################################
 ##  GIT DEPLOY
 ############################################################
-alias gdpl="git-deploy"
-alias gdd="gdpl deploy"
+alias gd="g deploy"
+alias gdd="gd deploy"
 
 ############################################################
 ##  GIT DEPLOY

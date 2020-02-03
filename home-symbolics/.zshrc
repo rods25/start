@@ -88,7 +88,7 @@ ZSH_THEME="kolo"
 # Add wisely, as too many plugins slow down shell startup.
 
 # Download external plugins ZSH
-bash $HOME/Documents/start/zshPlugins.sh
+bash $HOME/Playground/zshPlugins.sh
 
 # Config bgnotify
 bgnotify_threshold=4  ## set your own notification threshold
@@ -138,4 +138,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # -- .dotfiles ----------------------------------------------------------------------
-source "$HOME/Documents/start/.main"
+source "$HOME/Playground/.main"

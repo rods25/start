@@ -123,7 +123,7 @@ fi
 if [[ -d "$TCLPATH" ]]; then
   echo "$TCLPATH já existe"
 else
-  cd $START
+  cd $PG
   curl http://templatecache.qa.intranet/templatecache-local/tcl-installer.jar --output tcl-installer.jar
   java -jar tcl-installer.jar
   rm -rf tcl-installer.jar

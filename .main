@@ -1,7 +1,7 @@
 export OSTYPE="linux-gnu"
 export DOTFILES_OS='ubuntu'
 
-export DOTFILES_PATH="$HOME/Documents/start"
+export DOTFILES_PATH="$HOME/Playground"
 export DOTFILES_ALIASES_PATH="$DOTFILES_PATH/aliases"
 export DOTFILES_EXPORTS_PATH="$DOTFILES_PATH/exports"
 

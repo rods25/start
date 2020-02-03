@@ -9,11 +9,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # -- OS VARIABLES - Paths
-export START="$HOME/Documents/start"
-export SVNPATH="$START/svn"
-export SVNQAPATH="$START/svn-qa"
-export TCLPATH="$START/templatecache-local"
-export GITPATH="$START/git"
+export PG="$HOME/Playground"
+export SVNPATH="$PG/svn"
+export SVNQAPATH="$PG/svn-qa"
+export TCLPATH="$PG/templatecache-local"
+export GITPATH="$PG/git"
 export NGINX_DIR="/etc/nginx"
 
 export PATH=$PATH:~/.npm_global_modules/bin

@@ -15,11 +15,6 @@ do
         fi
 
         ln -s "$PWD/home-symbolics/$file" "$HOME/$file"
+        echo "Configs $HOME/$file definidas"
     fi
 done
-
-if [[ -f zshPlugins.sh ]]; then
-    zsh
-else
-    echo "Não encontrou zshPlugins"
-fi

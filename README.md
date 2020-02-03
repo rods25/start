@@ -46,15 +46,14 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | 
 
 #
 # Gerando Key SSH para o stash uol
-#ssh-keygen -t rsa -C "rrfsantos@uolinc.com"
+ssh-keygen -t rsa -C "rrfsantos@uolinc.com"
 #xclip -selection clipboard < ~/.ssh/id_rsa.pub
 #echo "xclip ssh to stash, favor colar no seu ambiente"
 
 #
-# Após configurar o SSH Key no stash, clone o projeto START para $HOME/Documents/
-cd $HOME/Documents/
-git clone ssh://git@stash.uol.intranet:7999/~rrfsantos/start.git start
-sudo chmod -R 777 start/
+# Após configurar o SSH Key no stash, clone o projeto START para $HOME/Playground/
+# cd $HOME/Playground/
+git clone ssh://git@stash.uol.intranet:7999/~rrfsantos/start.git Playground
 
 ```
 ### Instalações do sistema ###
