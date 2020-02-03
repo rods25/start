@@ -1,28 +1,28 @@
 {
 	"folders": [
 		{
-			"path": "$PG/git/www.uol.com.br"
+			"path": "/home/rrfsantos/Playground/git/www.uol.com.br"
 		},
 		{
-			"path": "$PG/git/www.uol.com.br-camaleao-editorial"
+			"path": "/home/rrfsantos/Playground/git/www.uol.com.br-camaleao-editorial"
 		},
 		{
-			"path": "$PG/svn/metatemplate/br/com/uol/www/"
+			"path": "/home/rrfsantos/Playground/svn/metatemplate/br/com/uol/www/"
 		},
 		{
-			"path": "$PG/svn/include/homeuol/"
+			"path": "/home/rrfsantos/Playground/svn/include/homeuol/"
 		},
 		{
-			"path": "$PG/svn/webcontent/br/com/uol/home2015"
+			"path": "/home/rrfsantos/Playground/svn/webcontent/br/com/uol/home2015"
 		},
 		{
-			"path": "$PG/app/nginx"
+			"path": "/home/rrfsantos/Playground/app/nginx"
 		},
 		{
-			"path": "$PG/"
+			"path": "/home/rrfsantos/Playground/"
 		},
 		{
-			"path": "$PG/git/commons.uol.com.br-monaco"
+			"path": "/home/rrfsantos/Playground/git/commons.uol.com.br-monaco"
 		}
 	],
 	"settings": {}

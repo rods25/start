@@ -1,19 +1,19 @@
 {
 	"folders": [
 		{
-			"path": "$PG/git/projeto-placar-carnaval"
+			"path": "/home/rrfsantos/Playground/git/projeto-placar-carnaval"
 		},
 		{
-			"path": "$PG/git/www.uol.com.br"
+			"path": "/home/rrfsantos/Playground/git/www.uol.com.br"
 		},
 		{
-			"path": "$PG/git/commons.uol.com.br-monaco/export/www.uol.com.br/camaleao/editorial"
+			"path": "/home/rrfsantos/Playground/svn/webcontent/br/com/uol/commons/monaco/export/www.uol.com.br/camaleao/editorial"
 		},
 		{
-			"path": "$PG/git/publicador-resources-conteudo"
+			"path": "/home/rrfsantos/Playground/git/publicador-resources-conteudo"
 		},
 		{
-			"path": "$PG"
+			"path": "/home/rrfsantos/Playground/"
 		}
 	],
 	"settings": {}
