@@ -86,3 +86,6 @@ upstream wwwUOLPreview {
     server 10.129.160.59;
 }
 
+upstream HOMEProduction {
+    server 104.17.33.24:443;
+}
