@@ -51,9 +51,9 @@ ssh-keygen -t rsa -C "rrfsantos@uolinc.com"
 #echo "xclip ssh to stash, favor colar no seu ambiente"
 
 #
-# Após configurar o SSH Key no stash, clone o projeto START para $HOME/Playground/
-# cd $HOME/Playground/
-git clone ssh://git@stash.uol.intranet:7999/~rrfsantos/start.git Playground
+# Após configurar o SSH Key no stash, clone o projeto START para /home/rrfsantos/Documents/space/
+# cd /home/rrfsantos/Documents/space/
+git clone ssh://git@stash.uol.intranet:7999/~rrfsantos/start.git start
 
 ```
 ### Instalações do sistema ###

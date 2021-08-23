@@ -17,6 +17,7 @@ GITREPOSDIRS=(
     "dcweb/placar.uol.com.br.git"
     "dcweb/projeto-grafico-v2.git"
     "dcweb/projeto-grafico-v3.git"
+    "~fjsilva/pgv3-cli.git"
     "dcweb/projeto-placar-esporte.git"
     "dcweb/publicador-resources-conteudo.git"
     "~d_gsoares/robocopier.git"
@@ -38,6 +39,7 @@ GITDIRS=(
     "placar.uol.com.br"
     "projeto-grafico-v2"
     "projeto-grafico-v3"
+    "pgv3-cli"
     "projeto-placar-esporte"
     "publicador-resources-conteudo"
     "robocopier"
@@ -69,52 +71,50 @@ done
 #############################################################################################
 ## SVN
 #############################################################################################
-SVNDIRS=(
-    "metatemplate"
-    "branches"
-    "include"
-    "resources"
-    "webcontent/br/com/uol/commons"
-    "webcontent/com/jsuol/c"
-    "webcontent/com/imguol/c"
-    "webcontent/com/stc/c"
-    "webcontent/br/com/uol/home2015"
-    "webcontent/br/com/bol/home"
-    "webcontent/br/com/uol/esporte/placar.futebol"
-    "webcontent/br/com/uol/placar/esporte"
-)
-
-for SVNDIR in "${SVNDIRS[@]}"
-do
-    if [[ -d "$SVNPATH/$SVNDIR" ]]; then
-        echo "SVN já clonado: $SVNPATH/$SVNDIR"
-        cd $SVNPATH/$SVNDIR
-        svn up
-    else
-        ## Criando estrutura de pastas
-        mkdir -p "$SVNPATH/$SVNDIR"
-        rm -rf "$SVNPATH/$SVNDIR"
-
-        ## Copiando svn
-        svn checkout "https://publicador.svn.intranet/repository/$SVNDIR" "$SVNPATH/$SVNDIR"
-    fi
-done
+##SVNDIRS=(
+##    "metatemplate"
+##    "branches"
+##    "include"
+##    "resources"
+##    "webcontent/br/com/uol/commons"
+##    "webcontent/com/jsuol/c"
+##    "webcontent/com/imguol/c"
+##    "webcontent/com/stc/c"
+##    "webcontent/br/com/uol/home2015"
+##    "webcontent/br/com/bol/home"
+##)
+##
+##for SVNDIR in "${SVNDIRS[@]}"
+##do
+##    if [[ -d "$SVNPATH/$SVNDIR" ]]; then
+##        echo "SVN já clonado: $SVNPATH/$SVNDIR"
+##        cd $SVNPATH/$SVNDIR
+##        svn up
+##    else
+##        ## Criando estrutura de pastas
+##        mkdir -p "$SVNPATH/$SVNDIR"
+##        rm -rf "$SVNPATH/$SVNDIR"
+##
+##        ## Copiando svn
+##        svn checkout "https://publicador.svn.intranet/repository/$SVNDIR" "$SVNPATH/$SVNDIR"
+##    fi
+##done
 
 #############################################################################################
 ## SVN QA
 #############################################################################################
-if [[ -d "$SVNQAPATH" ]]; then
-    echo "SVN já clonado: $SVNQAPATH"
-    cd $SVNQAPATH
-    svn up
-else
-    ## Criando estrutura de pastas
-    mkdir -p "$SVNQAPATH"
-    rm -rf "$SVNQAPATH"
-
-    ## Copiando svn
-    svn checkout "https://publicador.svn.qa.intranet/repository/" "$SVNQAPATH"
-fi
+##if [[ -d "$SVNQAPATH" ]]; then
+##    echo "SVN já clonado: $SVNQAPATH"
+##    cd $SVNQAPATH
+##    svn up
+##else
+##    ## Criando estrutura de pastas
+##    mkdir -p "$SVNQAPATH"
+##    rm -rf "$SVNQAPATH"
+##
+##    ## Copiando svn
+##    svn checkout "https://publicador.svn.qa.intranet/repository/" "$SVNQAPATH"
+##fi
 
 #############################################################################################
 ## Clonando TCL
