@@ -71,34 +71,34 @@ done
 #############################################################################################
 ## SVN
 #############################################################################################
-##SVNDIRS=(
-##    "metatemplate"
-##    "branches"
-##    "include"
-##    "resources"
-##    "webcontent/br/com/uol/commons"
-##    "webcontent/com/jsuol/c"
-##    "webcontent/com/imguol/c"
-##    "webcontent/com/stc/c"
-##    "webcontent/br/com/uol/home2015"
-##    "webcontent/br/com/bol/home"
-##)
-##
-##for SVNDIR in "${SVNDIRS[@]}"
-##do
-##    if [[ -d "$SVNPATH/$SVNDIR" ]]; then
-##        echo "SVN já clonado: $SVNPATH/$SVNDIR"
-##        cd $SVNPATH/$SVNDIR
-##        svn up
-##    else
-##        ## Criando estrutura de pastas
-##        mkdir -p "$SVNPATH/$SVNDIR"
-##        rm -rf "$SVNPATH/$SVNDIR"
-##
-##        ## Copiando svn
-##        svn checkout "https://publicador.svn.intranet/repository/$SVNDIR" "$SVNPATH/$SVNDIR"
-##    fi
-##done
+SVNDIRS=(
+    "metatemplate"
+    "branches"
+    "include"
+    "resources"
+    "webcontent/br/com/uol/commons"
+    "webcontent/com/jsuol/c"
+    "webcontent/com/imguol/c"
+    "webcontent/com/stc/c"
+    "webcontent/br/com/uol/home2015"
+    "webcontent/br/com/bol/home"
+)
+
+for SVNDIR in "${SVNDIRS[@]}"
+do
+    if [[ -d "$SVNPATH/$SVNDIR" ]]; then
+        echo "SVN já clonado: $SVNPATH/$SVNDIR"
+        cd $SVNPATH/$SVNDIR
+        svn up
+    else
+        ## Criando estrutura de pastas
+        mkdir -p "$SVNPATH/$SVNDIR"
+        rm -rf "$SVNPATH/$SVNDIR"
+
+        ## Copiando svn
+        svn checkout "https://publicador.svn.intranet/repository/$SVNDIR" "$SVNPATH/$SVNDIR"
+    fi
+done
 
 #############################################################################################
 ## SVN QA

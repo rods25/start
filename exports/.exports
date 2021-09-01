@@ -16,4 +16,5 @@ export TCLPATH="$SPACE/templatecache-local"
 export GITPATH="$SPACE/git"
 ##export NGINX_DIR="/etc/nginx"
 
-export PATH=$PATH:~/.npm_global_modules/bin
+export PATH=$PATH:$HOME/.npm_global_modules/bin:$HOME/.npm-global/bin
+
