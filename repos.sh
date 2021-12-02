@@ -5,8 +5,20 @@
 ## Clonando GIT
 #############################################################################################
 
-GITREPOSDIRS=()
-GITDIRS=()
+GITREPOSDIRS=(
+    'start',
+    'alura-angular-bytebank',
+    'alura-front',
+    'frontend-test',
+    'react-with-node-testlibre'
+)
+GITDIRS=(
+    'start',
+    'ByteBank',
+    'Front',
+    'tests/airliquide',
+    'tests/mercadolibre'
+)
 
 if [[ -d "$GITPATH" ]]; then
     echo "Diretório GIT já existe: $GITPATH"
@@ -22,7 +34,7 @@ do
     else
         ## Copiando svn
         cd $GITPATH
-        git clone --recursive "ssh://git@stash.uol.intranet:7999/${GITREPOSDIRS[$GITREPOKEY]}" "${GITDIRS[$GITREPOKEY]}"
+        git clone --recursive "https://github.com/rods25/${GITREPOSDIRS[$GITREPOKEY]}" "${GITDIRS[$GITREPOKEY]}"
     fi
 done
 

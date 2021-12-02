@@ -1,5 +1,5 @@
 ## TODO Config domains nginx
-## Projeto Start (Cinnamon) com as configs necessárias para o ambiente UOL.
+## Projeto Start (Cinnamon) com as configs necessárias para o ambiente dev.
 
 Copie e cole o código abaixo em um editor e faça as alterações necessárias. Depois execute no terminal.
 
@@ -43,15 +43,15 @@ done
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 #
-# Gerando Key SSH para o stash uol
-ssh-keygen -t rsa -C "rodrigo.rifesa@gmail.com"
+# Gerando Key SSH para o stash se necessario
+#ssh-keygen -t rsa -C "rodrigo.rifesa@gmail.com"
 #xclip -selection clipboard < ~/.ssh/id_rsa.pub
 #echo "xclip ssh to stash, favor colar no seu ambiente"
 
 #
 # Após configurar o SSH Key no stash, clone o projeto START para /home/rrsantos/Documentos/space/
 # cd /home/rrsantos/Documentos/space/
-git clone ssh://git@stash.uol.intranet:7999/~rrsantos/start.git start
+git clone https://github.com/rods25/start ~/Documentos/space/start
 
 ```
 ### Instalações do sistema ###
@@ -62,17 +62,5 @@ Executar "bash initDownloads.sh" e acompanhar os processos. Após finalizar, con
 Executar "bash start.sh" no terminal.
 O arquivo "start" possui configurações que auxiliam no desenvolvimento. 
 
-### Para ambiente UOL ###
-Execute "bash uol.sh" no terminal.
-Clona projetos usados na equipe da Home UOL. (www.uol.com.br, editorial, jsuol, TC, tclink)
-*Execute npm install -g em /git/git-deploy, em /robocopier/ e em /tclink/*
-
-#### Para LSHome, TC e nginx ####
-Para criar o link simbólico de "www.uol.com.br-editorial", basta ir para "git/www.uol.com.br/" e executar  "tclink"  no terminal.
-Para rodar a TC na home, execute tcl.
-
 Execute "bash nginx.sh" no terminal.
 Verifique os hosts digitando "hosts" no terminal e utilize "ngstr" para iniciar o serviço.  
-
-** EXECUTAR SOMENTE EM CASO DE ERRO **
-No projeto da Home UOL podem aparecer erros ao executar "npm install" ou "npm start" em "camaleao/src/", execute "git config --global http.sslverify "false"". O repositório pode estar com conflitos de https e este comando libera para download.
