@@ -1,7 +1,9 @@
+## Define dotfiles e paths
+
 export OSTYPE="linux-gnu"
 export DOTFILES_OS='ubuntu'
 
-export DOTFILES_PATH="/home/rrfsantos/Documents/space/start"
+export DOTFILES_PATH="/home/rrsantos/Documentos/space/start"
 export DOTFILES_ALIASES_PATH="$DOTFILES_PATH/aliases"
 export DOTFILES_EXPORTS_PATH="$DOTFILES_PATH/exports"
 

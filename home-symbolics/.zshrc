@@ -88,13 +88,14 @@ ZSH_THEME="kolo"
 # Add wisely, as too many plugins slow down shell startup.
 
 # Download external plugins ZSH
-bash $HOME/Documents/space/start/zshPlugins.sh
+echo plugins ZSH
+bash $HOME/Documentos/space/start/zshPlugins.sh
 
 # Config bgnotify
 bgnotify_threshold=4  ## set your own notification threshold
 function bgnotify_formatted {
   ## $1=exit_status, $2=command, $3=elapsed_time
-  [ $1 -eq 0 ] && title="Santa barba de Gandalf!"
+  [ $1 -eq 0 ] && title="Gomu Gomu no Execution!"
   bgnotify "$title -- after $3 s" "$2";
 }
 
@@ -106,7 +107,6 @@ plugins=(
     dnf
     zsh-syntax-highlighting
     zsh-autosuggestions
-    zsh-nvm
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -138,4 +138,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # -- .dotfiles ----------------------------------------------------------------------
-source "$HOME/Documents/space/start/.main"
+source "$HOME/Documentos/space/start/.main"

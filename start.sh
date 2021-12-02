@@ -2,7 +2,7 @@
 #!/usr/bin/env bash
 
 ##
-## Percorrendo configs e criando links
+## Percorrendo configs e criando links simbolicos
 HO=( ".gitconfig" ".gitconfig.local" ".gitignore" ".zshrc")
 for file in "${HO[@]}"
 do

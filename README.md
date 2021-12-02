@@ -11,7 +11,6 @@ Copie e cole o código abaixo em um editor e faça as alterações necessárias.
 echo "Iniciando instalação dos pacotes"
 PACKS=( 
     "git"
-    "subversion" 
     "terminator" 
     "snapd" 
     "npm"
@@ -29,8 +28,9 @@ SNAPPACKS=(
     "snapcraft --classic" 
     "code --classic" 
     "node --channel=8/stable --classic" 
-    "spotify" 
-    "slack --classic" 
+    "1password"
+    "chromium"
+    "strimio-desktop"
 )
 for SNAPS in "${SNAPPACKS[@]}"
 do
@@ -44,14 +44,14 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 
 #
 # Gerando Key SSH para o stash uol
-ssh-keygen -t rsa -C "rrfsantos@uolinc.com"
+ssh-keygen -t rsa -C "rodrigo.rifesa@gmail.com"
 #xclip -selection clipboard < ~/.ssh/id_rsa.pub
 #echo "xclip ssh to stash, favor colar no seu ambiente"
 
 #
-# Após configurar o SSH Key no stash, clone o projeto START para /home/rrfsantos/Documents/space/
-# cd /home/rrfsantos/Documents/space/
-git clone ssh://git@stash.uol.intranet:7999/~rrfsantos/start.git start
+# Após configurar o SSH Key no stash, clone o projeto START para /home/rrsantos/Documentos/space/
+# cd /home/rrsantos/Documentos/space/
+git clone ssh://git@stash.uol.intranet:7999/~rrsantos/start.git start
 
 ```
 ### Instalações do sistema ###

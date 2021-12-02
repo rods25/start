@@ -9,7 +9,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # -- OS VARIABLES - Paths
-export SPACE="$HOME/Documents/space"
+export SPACE="$HOME/Documentos/space"
 export SVNPATH="$SPACE/svn"
 export SVNQAPATH="$SPACE/svn-qa"
 export TCLPATH="$SPACE/templatecache-local"

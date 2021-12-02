@@ -2,13 +2,11 @@
 #!/usr/bin/env bash
 
 PLUGINSREPODIR=(
-    "lukechilds/zsh-nvm"
     "zsh-users/zsh-syntax-highlighting.git"
     "zsh-users/zsh-autosuggestions"
 )
 
 PLUGINSDIR=(
-    "zsh-nvm"
     "zsh-syntax-highlighting"
     "zsh-autosuggestions"
 )

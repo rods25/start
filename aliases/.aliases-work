@@ -1,34 +1,34 @@
 ############################################################
 ##  SVN
 ############################################################
-alias svn-up='.svn && echo "\n"; find . -mindepth 1 \-maxdepth 15 -name "*.svn" -type d -exec svn up {}/.. \;'
-alias svn-st='.svn && echo "\n"; find . -mindepth 1 \-maxdepth 15 -name "*.svn" -type d -exec svn st {}/.. \;'
-alias svn-clup='.svn && echo "\n"; find . -mindepth 1 \-maxdepth 15 -name "*.svn" -type d -exec svn clean up {}/.. \;'
+##alias svn-up='.svn && echo "\n"; find . -mindepth 1 \-maxdepth 15 -name "*.svn" -type d -exec svn up {}/.. \;'
+##alias svn-st='.svn && echo "\n"; find . -mindepth 1 \-maxdepth 15 -name "*.svn" -type d -exec svn st {}/.. \;'
+##alias svn-clup='.svn && echo "\n"; find . -mindepth 1 \-maxdepth 15 -name "*.svn" -type d -exec svn clean up {}/.. \;'
 
-alias .svn-up='echo "\n"; find . -mindepth 1 \-maxdepth 15 -name "*.svn" -type d -exec svn up {}/.. \;'
-alias .svn-st='echo "\n"; find . -mindepth 1 \-maxdepth 15 -name "*.svn" -type d -exec svn st {}/.. \;'
-alias .svn-clup='echo "\n"; find . -mindepth 1 \-maxdepth 15 -name "*.svn" -type d -exec svn clean up {}/.. \;'
+##alias .svn-up='echo "\n"; find . -mindepth 1 \-maxdepth 15 -name "*.svn" -type d -exec svn up {}/.. \;'
+##alias .svn-st='echo "\n"; find . -mindepth 1 \-maxdepth 15 -name "*.svn" -type d -exec svn st {}/.. \;'
+##alias .svn-clup='echo "\n"; find . -mindepth 1 \-maxdepth 15 -name "*.svn" -type d -exec svn clean up {}/.. \;'
 
-alias .svn-clean="svn status | grep '^?' | awk '{print $2}' | xargs rm -rf"
+##alias .svn-clean="svn status | grep '^?' | awk '{print $2}' | xargs rm -rf"
 
 ############################################################
 ##  TCL
 ############################################################
-alias tcl="cd $TCLPATH && sh run.sh 58080 58081"
-alias tpls="cd $TCLPATH/templates;"
-alias tclogs="cd /export/logs/templatecache;"
+##alias tcl="cd $TCLPATH && sh run.sh 58080 58081"
+##alias tpls="cd $TCLPATH/templates;"
+##alias tclogs="cd /export/logs/templatecache;"
 
 ############################################################
 ##  GIT DEPLOY
 ############################################################
-alias gd="g deploy"
-alias gdd="gd deploy"
+##alias gd="g deploy"
+##alias gdd="gd deploy"
 
 ############################################################
 ##  GIT DEPLOY
 ############################################################
-alias .svn="cd $SVNPATH"
-alias .svn-qa="cd $SVNQAPATH"
+##alias .svn="cd $SVNPATH"
+##alias .svn-qa="cd $SVNQAPATH"
 
 ############################################################
 ##  NGINX
