@@ -6,14 +6,12 @@
 #############################################################################################
 
 GITREPOSDIRS=(
-    'start'
     'alura-angular-bytebank'
     'alura-front'
     'frontend-test'
     'react-with-node-testlibre'
 )
 GITDIRS=(
-    'start'
     'ByteBank'
     'Front'
     'tests/airliquide'
