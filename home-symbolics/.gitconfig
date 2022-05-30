@@ -131,3 +131,6 @@
 [user]
 	name = Rodrigo Ribeiro
 	email = rodrigo.rifesa@gmail.com
+	user = rods25
+[credential]
+	helper = store
